@@ -1,23 +1,14 @@
 {
-  "name": "tgp-starter-kit",
+  "name": "oblique-strategies",
   "version": "1.0.0",
-  "description": "A quick start for developing client side stuff using ES6 with polyfills etc.",
-  "main": "index.js",
+  "description": "Based on Oblique Strategies by Brian Eno and Peter Schmidt",
+  "main": "index.html",
   "scripts": {
-    "start": "watchify ./source/main.js -o ./bundle.js | node ./node_modules/srvlr/index.js",
-    "watch": "watchify ./source/main.js -o ./bundle.js",
-    "serve": "python -m SimpleHTTPServer",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "http-server -p 8082 source/"
   },
-  "author": "tom.g.pearson@gmail.com",
+  "author": "guy.bruneau@gmail.com",
   "license": "ISC",
   "devDependencies": {
-    "babelify": "^6.3.0",
-    "browserify": "^11.2.0",
-    "d3-dsv": "^0.1.12",
-    "d3-request": "^0.2.3",
-    "d3-selection": "^0.4.12",
-    "srvlr": "^0.5.0",
-    "watchify": "^3.4.0"
+    "http-server": "^0.12.3"
   }
 }
