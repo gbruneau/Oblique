@@ -1,23 +1,10 @@
 import './style.css';
-
 import myRes from './data/obliquestrategies.json';
-
 
 var cards=[];
 cards = myRes.cardlist;
 
 // var cardsURL='data/obliquestrategies.json';
-
-/*
-function readCards(){
-    const xmlhttp = new XMLHttpRequest();
-    xmlhttp.onload = function() {
-      const myRes = JSON.parse(this.responseText);
-      cards = myRes.cardlist;
-    }
-    xmlhttp.open("GET", cardsURL, true);
-    xmlhttp.send();
-}*/
 
 function getCard()
 {
@@ -25,12 +12,6 @@ function getCard()
     var cardText=cards[selectedCard].card;
     document.getElementById("card").innerHTML  = cardText;
 }
-
-
-//=== MAIN ===/
-
-
-//readCards();
 
 document.getElementById('card').addEventListener("click",function(){
   getCard();
