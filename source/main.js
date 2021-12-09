@@ -1,8 +1,14 @@
+import './style.css';
+
+import myRes from './data/obliquestrategies.json';
+
 
 var cards=[];
-var cardsURL='data/obliquestrategies.json';
+cards = myRes.cardlist;
 
+// var cardsURL='data/obliquestrategies.json';
 
+/*
 function readCards(){
     const xmlhttp = new XMLHttpRequest();
     xmlhttp.onload = function() {
@@ -11,8 +17,7 @@ function readCards(){
     }
     xmlhttp.open("GET", cardsURL, true);
     xmlhttp.send();
-}
-
+}*/
 
 function getCard()
 {
@@ -25,5 +30,8 @@ function getCard()
 //=== MAIN ===/
 
 
-readCards();
+//readCards();
 
+document.getElementById('card').addEventListener("click",function(){
+  getCard();
+});

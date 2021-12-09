@@ -4,11 +4,13 @@
   "description": "Based on Oblique Strategies by Brian Eno and Peter Schmidt",
   "main": "index.html",
   "scripts": {
-    "serve": "http-server -p 8082 source/"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "author": "guy.bruneau@gmail.com",
   "license": "ISC",
-  "devDependencies": {
-    "http-server": "^0.12.3"
+  "dependencies": {
+    "vite": "^2.7.1"
   }
 }
