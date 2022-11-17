@@ -1,8 +1,5 @@
 import './style.css';
-import myRes from './data/obliquestrategies.json';
-
-var cards=[];
-cards = myRes.cardlist;
+import cards from './data/obliquestrategies.json';
 
 // var cardsURL='data/obliquestrategies.json';
 

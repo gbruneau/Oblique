@@ -4,12 +4,11 @@ export default {
     base: "./",
     clearScreen: false,
     server: {
-        https: false,
-        middlewareMode: 'ssr'
+        https: false
     },
     build:
-        {
-            outDir: "../dist/Oblique" ,
-            manifest: true
-        }    
-  }
+    {
+        outDir: "../dist/Oblique",
+        manifest: true
+    }
+}

@@ -6,11 +6,15 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "genjson": "csvtojson ./source/data/obliquestrategies.csv >./source/data/obliquestrategies.json",
     "preview": "vite preview"
   },
   "author": "guy.bruneau@gmail.com",
   "license": "ISC",
   "dependencies": {
-    "vite": "^2.7.1"
+    "vite": "^2.9.15"
+  },
+  "devDependencies": {
+    "csvtojson": "^2.0.10"
   }
 }
