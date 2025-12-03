@@ -12,9 +12,9 @@
   "author": "guy.bruneau@gmail.com",
   "license": "ISC",
   "dependencies": {
-    "vite": "^2.9.15"
+    "vite": "^7.2.6"
   },
   "devDependencies": {
-    "csvtojson": "^2.0.10"
+    "csvtojson": "^2.0.14"
   }
 }
