@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "genjson": "csvtojson ./source/data/obliquestrategies.csv >./source/data/obliquestrategies.json",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "rm -r  ../gbruneau.github.io/Oblique/;cp -R dist/Oblique/ ../gbruneau.github.io/"
+
   },
   "author": "guy.bruneau@gmail.com",
   "license": "ISC",
